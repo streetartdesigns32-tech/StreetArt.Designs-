@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreetArt.Design — Wear the Art</title>
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--text:#f5f5f5;--muted:#a6a6a6;--line:#292929}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+nav{position:sticky;top:0;z-index:5;background:rgba(11,11,11,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:18px 6%}
+.logo{font-weight:900;letter-spacing:-1px;font-size:22px}.logo span{color:#888}
+nav a{color:var(--text);text-decoration:none;margin-left:24px;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.hero{min-height:78vh;padding:90px 6% 70px;display:flex;align-items:end;background:radial-gradient(circle at 75% 25%,#343434 0,#181818 22%,#0b0b0b 55%)}
+.hero h1{font-size:clamp(64px,13vw,170px);line-height:.82;letter-spacing:-8px;margin:0;max-width:1000px;text-transform:uppercase}
+.hero p{max-width:520px;color:var(--muted);font-size:18px;line-height:1.5;margin:35px 0 25px}
+.btn{display:inline-block;background:#f5f5f5;color:#0b0b0b;padding:15px 23px;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:1px}
+section{padding:90px 6%;border-top:1px solid var(--line)}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:#888;margin-bottom:12px}
+h2{font-size:clamp(38px,7vw,78px);letter-spacing:-4px;margin:0 0 35px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);min-height:390px;padding:20px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}
+.art{position:absolute;inset:0;background:linear-gradient(135deg,#222,#777 45%,#111);opacity:.8}.art.two{background:linear-gradient(45deg,#111,#aaa,#333)}.art.three{background:radial-gradient(circle,#999,#222 45%,#090909)}
+.card h3,.card p{position:relative;margin:0}.card h3{font-size:25px}.card p{color:#bbb;margin-top:7px}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}.services p{font-size:20px;line-height:1.5;color:#bbb;max-width:650px}.service-list{border-top:1px solid var(--line)}.service-list div{padding:22px 0;border-bottom:1px solid var(--line);font-size:18px;display:flex;justify-content:space-between}
+footer{padding:45px 6%;display:flex;justify-content:space-between;color:#777;font-size:12px}
+@media(max-width:750px){nav a{margin-left:10px;font-size:10px}.grid,.services{grid-template-columns:1fr}.hero{min-height:70vh}.hero h1{letter-spacing:-4px}.card{min-height:330px}footer{display:block}footer div+div{margin-top:15px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">STREETART<span>.DESIGN</span></div><div><a href="#shop">Shop</a><a href="#services">Design</a><a href="#about">About</a></div></nav>
+
+<header class="hero">
+<div><div class="eyebrow">Clothing • Art • Custom Design</div>
+<h1>WEAR<br>THE ART.</h1>
+<p>StreetArt.Design is a creative clothing and design studio built around original art, bold graphics, and pieces made to stand out.</p>
+<a class="btn" href="#shop">Shop the drop</a></div>
+</header>
+
+<section id="shop"><div class="eyebrow">01 / The collection</div><h2>SHOP</h2>
+<div class="grid">
+<div class="card"><div class="art"></div><h3>Graphic Tees</h3><p>Original street-inspired artwork.</p></div>
+<div class="card"><div class="art two"></div><h3>Hoodies</h3><p>Heavy graphics. Everyday wear.</p></div>
+<div class="card"><div class="art three"></div><h3>Pants + More</h3><p>Build the full fit.</p></div>
+</div></section>
+
+<section id="services"><div class="eyebrow">02 / Custom work</div><div class="services">
+<div><h2>YOUR IDEA.<br>OUR ART.</h2><p>Need artwork for a brand, athlete, team, event, social page, or something completely different? We create custom graphics designed around your vision.</p><a class="btn" href="mailto:YOUR-EMAIL-HERE">Request a design</a></div>
+<div class="service-list"><div>Sports Graphics <span>→</span></div><div>Brand Designs <span>→</span></div><div>Posters + Covers <span>→</span></div><div>Custom Artwork <span>→</span></div><div>Social Media Graphics <span>→</span></div></div>
+</div></section>
+
+<section id="about"><div class="eyebrow">03 / About</div><h2>MADE BY<br>CREATORS.</h2><p style="max-width:700px;color:#aaa;font-size:20px;line-height:1.6">StreetArt.Design brings clothing and custom graphic design together under one creative brand. We make our own pieces, collaborate on new ideas, and create artwork for people who want something different.</p></section>
+
+<footer><div>© 2026 STREETART.DESIGN</div><div>WEAR THE ART. CREATE THE ART.</div></footer>
+</body>
+</html>
